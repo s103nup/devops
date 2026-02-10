@@ -20,9 +20,9 @@ die() {
 }
 
 get_repo_root() {
-  local script_dir
-  script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-  echo "$script_dir"
+  local repo_root
+  repo_root="$(pwd)"
+  echo "$repo_root"
 }
 
 # 顯示當前版本
